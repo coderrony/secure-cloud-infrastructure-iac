@@ -35,7 +35,7 @@ locals {
 module "ec2" {
   source = "./modules/ec2"
 
-  # Networking inputs [cite: 6, 14]
+  # Networking inputs
   vpc_id            = aws_vpc.main.id
   public_subnet_id  = aws_subnet.public.id
   private_subnet_id = aws_subnet.private.id
