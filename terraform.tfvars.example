@@ -1,0 +1,18 @@
+# AWS Configuration
+# ============================================================================
+aws_region  = "ap-northeast-1"  
+aws_profile = "default"
+
+# EC2 Configuration
+# ============================================================================
+# Instance Types (adjust based on workload)
+instance_type_public = "t2.micro"   # 2 vCPU, 2 GB RAM
+instance_type_bastion  = "t2.nano"   # 2 vCPU, 2 GB RAM
+instance_type_private = "t2.medium"  # 2 vCPU, 4 GB RAM
+
+# Optional: Specify AMI ID (leave empty to use latest Ubuntu 22.04 LTS)
+ami_id = ""
+
+# Tagging
+project_name = "AWS_Infrastructure"
+environment  = "production"
